@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 steps:
 - id: 'branch name'
   name: 'alpine'
@@ -89,4 +88,8 @@ steps:
         echo "Branch '$BRANCH_NAME' does not represent an official environment."
         echo "*******************************************************************************"
       fi
-# [END tf-apply]      
+# [END tf-apply]
+
+# Set logging options to CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
