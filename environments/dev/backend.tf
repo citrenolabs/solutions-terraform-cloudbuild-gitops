@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "PROJECT_ID-tfstate"
+    bucket = "innate-client-433017-k4-tfstate"
     prefix = "env/dev"
   }
 }
